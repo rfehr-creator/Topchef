@@ -1,4 +1,4 @@
-# README.md (Top Chefs Vision Statement)
+Vision Statement
  
 Top Chef is a comprehensive recipe management app that allows users to spend less time searching and more time cooking. It contains an appealing user-interface that is consistent with modern cooking and recipe websites, including the display of recipe names, ingredients, quantities, instructions, food images, and more.
 
@@ -11,5 +11,4 @@ Built-in conversion tools will also aid those who find an interesting recipe but
 The project will be considered successful if each type of user prefers this system over existing cooking apps and books, as determined by survey, and the time spent looking for recipes are reduced by at least 25% from the current level. 
 
 
-# Top chef website
-dkfjdklfjdsalkfjdslfkdjfdlksf
+{% include VisionStatement.html %}
