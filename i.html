@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Top Chef</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: #303F9F;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+
+        section {
+            width: 98%;
+            float: left;
+            padding: 10px;
+        }
+
+        /* footer{
+           background-color:#777; 
+           color:white; 
+           clear:both; 
+           text-align:center; 
+           padding :10px;  
+       }   */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Top Chef</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a onclick="homeClick()" href="#home">Home</a></li>
+            <li><a onclick="visionClick()" href="#vision">Vision</a></li>
+            <li><a id="" href="#recipes">Recipes</a></li>
+            <li><a onclick="contributeClick()" href="#groupMembers">Contributors</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="vision-statement" hidden="true">
+            <h1>Vision Statement</h1>
+
+            <p>Top Chef is a comprehensive recipe management app that allows users to spend less time searching and more
+                time cooking.
+                It contains an appealing user-interface that is consistent with modern cooking and recipe websites,
+                including the
+                display of recipe names, ingredients, quantities, instructions, food images, and more.</p>
+
+            <p>The application is designed for those who love food and cooks of all skill levels, and includes a simple
+                user-interface
+                to attract users of all technological proficiencies. Whether you’re a beginner cook or a seasoned chef,
+                Top
+                Chef makes
+                it easy to view, add, delete, organize, edit, and search existing recipes within their application
+                profile.
+                Built-in
+                quality of life tools aim to attract users accustomed to varying measurement types, as well as useful
+                tools
+                for meal
+                planners and grocery shoppers.</p>
+
+            <p>Top Chef is valuable because it gives users the ability to create and save their own recipes with all the
+                necessary
+                details, including recipe names, ingredient list, measurement types, and step-by-step instructions,
+                leading
+                to the
+                centralization of recipe storage. Rather than storing recipes across several files, webpage bookmarks,
+                or
+                recipe books,
+                our system will allow for the easy integration of any recipe into one location. Furthermore, through the
+                ability to add
+                your own recipes, the app allows users to create their own virtual and personalized recipe book, saving
+                them
+                shelf space
+                at home.</p>
+
+            <p>Built-in conversion tools will also aid those who find an interesting recipe but are deterred by uncommon
+                or
+                undesirable
+                units. For example, if a recipe lists ingredient quantities in cups, we will offer the ability to switch
+                to
+                metric
+                measurements in litres or millilitres. Meal planners and grocery shoppers may also use the functionality
+                of
+                adjusting
+                portion sizes or exporting a grocery list to greatly enhance the efficiency of grocery shopping.
+                Further,
+                our system
+                will benefit cooks who are unsure of what to make. Given some ingredient selections, our system will
+                allow
+                the user to
+                view all related recipes. For example, if the user would like to create a pasta dish, they will be able
+                to
+                view all
+                pasta-related recipes within the application through our tagging system.</p>
+
+            <p>The project will be considered successful if each type of user prefers this system over existing cooking
+                apps and books,
+                as determined by survey, and the time spent looking for recipes are reduced by at least 25% from the
+                current
+                level.</p>
+        </div>
+        <div id="contributors">
+
+        </div>
+    </section>
+
+</body>
+<script>
+    function homeClick() {
+        document.getElementById('vision-statement').hidden = true
+        document.getElementById('contributors').hidden = true
+        
+    }
+    function visionClick() {
+        document.getElementById('vision-statement').hidden = false
+        
+    }
+    function contributeClick() {
+        document.getElementById('vision-statement').hidden = true
+        document.getElementById('contributors').hidden = false
+        
+    }
+</script>
+
+</html>
