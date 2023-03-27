@@ -89,6 +89,7 @@
             <li><a onclick="homeClick()" href="#home">Home</a></li>
             <li><a onclick="visionClick()" href="#vision">Vision</a></li>
             <li><a onclick="contributeClick()" href="#groupMembers">Contributors</a></li>
+            <li><a onclick="postmortemClick()" href="#postmortem">Postmortem</a></li>
         </ul>
     </nav>
 
@@ -101,10 +102,15 @@
                 within their application profile. Built-in quality of life tools aim to attract users accustomed to
                 varying measurement types, as well as useful tools for meal planners and grocery shoppers.</p>
             <h1>Features</h1>
-            <img src="p1.png" width="200" height="300">
-            <h1>View Recipes</h1>
-            <h1>Add Recipes</h1>
-            <h1>Edit Recipes</h1>
+
+            <video width="200" height="300" controls="controls">
+                <source src="video1.webm" type="video/webm">
+            </video>
+            <img src="Search.png" width="200" height="300">
+            <img src="ViewRecipe.png" width="200" height="300">
+            <img src="EditRecipe.png" width="200" height="300">
+            <img src="Options.png" width="200" height="300">
+            <img src="FavouriteList.png" width="200" height="300">
         </div>
         <div id="vision-statement" hidden="true">
             <h1>Vision Statement</h1>
@@ -192,8 +198,12 @@
                 <a class="skill">Gained skills</a>
             </div>
         </div>
+        <div id="postmortem" hidden="true">
+            <h1>Postmortem</h1>
+           
+            <p>As a group we chose trunk-based development to avoid "merge hell". One of the issues that came up during Iteration 1 was as a group we needed to let others know what we were working on and submit our code to gitlab so that we could help each other if necessary. </p>
+        </div>
     </section>
-
 </body>
 <script>
     function homeClick() {
@@ -205,14 +215,18 @@
     function contributeClick() {
         show(2)
     }
+    function postmortemClick() {
+        show(3)
+    }
 
     function show(showElement) {
-        let list = [true, true, true]
+        let list = [true, true, true, true]
         list[showElement] = false
 
         document.getElementById('home').hidden = list[0]
         document.getElementById('vision-statement').hidden = list[1]
         document.getElementById('contributors').hidden = list[2]
+        document.getElementById('postmortem').hidden = list[3]
     }
 </script>
 
