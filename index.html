@@ -57,24 +57,40 @@
             overflow: hidden;
         }
 
-        .contrib{
+        .contrib {
             width: 100%;
             display: block;
             margin-bottom: 10px;
             background-color: white;
             border-radius: 2%;
         }
-        .name{
+
+        .name {
             margin: 2px;
             color: black;
             font-weight: bold;
             font-size: 18px;
         }
 
-        .skill{
+        .skill {
             color: black;
             margin: 2px;
             font-weight: 300;
+        }
+
+        .functionality {
+            background-image: linear-gradient(#7c87cf, rgb(117, 117, 117));
+            color: black;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            width: 100%;
+        }
+
+        h2 {
+            display: block;
+            float: left;
+            padding: 30%;
+            color: white;
         }
     </style>
 </head>
@@ -101,17 +117,37 @@
                 seasoned chef, Top Chef makes it easy to view, add, delete, organize, edit, and search existing recipes
                 within their application profile. Built-in quality of life tools aim to attract users accustomed to
                 varying measurement types, as well as useful tools for meal planners and grocery shoppers.</p>
-            <h1>Features</h1>
 
-            <video width="200" height="300" controls="controls">
-                <source src="video1.webm" type="video/webm">
-            </video>
-            <img src="Search.png" width="200" height="300">
-            <img src="ViewRecipe.png" width="200" height="300">
-            <img src="EditRecipe.png" width="200" height="300">
-            <img src="Options.png" width="200" height="300">
-            <img src="FavouriteList.png" width="200" height="300">
+            <h1>Features</h1>
+            <div class="functionality">
+                <h2>Overview</h2>
+                <video width="200" height="300" controls="controls">
+                    <source src="video1.webm" type="video/webm">
+                </video>
+            </div>
+            <div class="functionality">
+                <div></div>
+                <h2>Search Recipes</h2>
+                <img src="Search.png" width="200" height="300">
+            </div>
+
+            <div class="functionality">
+                <div></div>
+                <div></div>
+                <h2>View Recipe</h2>
+                <img src="ViewRecipe.png" width="200" height="300">
+            </div>
+            <div class="functionality">
+                <div></div>
+                <h2>Edit Recipe</h2>
+                <img src="EditRecipe.png" width="200" height="300">
+            </div>
+            <div class="functionality">
+                <h2>Favourite Recipe</h2>
+                <img src="FavouriteList.png" width="200" height="300">
+            </div>
         </div>
+
         <div id="vision-statement" hidden="true">
             <h1>Vision Statement</h1>
 
@@ -183,7 +219,8 @@
             </div>
             <div class="contrib">
                 <a class="name">Fehr, Roland</a><br>
-                <a class="skill">By using the SOLID principles, I learned how to better organize my code. Also learned to be more efficient with git.</a>
+                <a class="skill">By using the SOLID principles, I learned how to better organize my code. I also learned
+                    to be more efficient with git.</a>
             </div>
             <div class="contrib">
                 <a class="name">Fernandes, Elroy</a><br>
@@ -200,8 +237,10 @@
         </div>
         <div id="postmortem" hidden="true">
             <h1>Postmortem</h1>
-           
-            <p>As a group we chose trunk-based development to avoid "merge hell". One of the issues that came up during Iteration 1 was as a group we needed to let others know what we were working on and submit our code to gitlab so that we could help each other if necessary. </p>
+
+            <p>As a group we chose trunk-based development to avoid "merge hell". One of the issues that came up during
+                Iteration 1 was as a group we needed to let others know what we were working on and submit our code to
+                gitlab so that we could help each other if necessary. </p>
         </div>
     </section>
 </body>
