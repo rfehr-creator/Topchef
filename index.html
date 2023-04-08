@@ -92,10 +92,12 @@
             padding: 5%;
             color: white;
         }
-        img{
+
+        img {
             margin: 10%;
         }
-        video{
+
+        video {
             margin: 10%;
         }
     </style>
@@ -145,8 +147,25 @@
                 <img src="EditRecipe.png" width="200" height="300">
             </div>
             <div class="functionality">
+                <h2>Add Recipe</h2>
+                <img src="AddRecipe1.png" width="200" height="300">
+                <img src="AddRecipe2.png" width="200" height="300">
+                <img src="AddRecipe3.png" width="200" height="300">
+            </div>
+            <div class="functionality">
+                <h2>Delete Recipe</h2>
+                <img src="Delete1.png" width="200" height="300">
+                <img src="Delete2.png" width="200" height="300">
+            </div>
+            <div class="functionality">
                 <h2>Favourite Recipe</h2>
                 <img src="FavouriteList.png" width="200" height="300">
+            </div>
+            <div class="functionality">
+                <h2>Shopping List</h2>
+                <img src="AddRecipe1.png" width="200" height="300">
+                <img src="ShoppingList1.png" width="200" height="300">
+                <img src="ShoppingList2.png" width="200" height="300">
             </div>
         </div>
 
@@ -221,7 +240,8 @@
             </div>
             <div class="contrib">
                 <a class="name">Fehr, Roland</a><br>
-                <a class="skill">I learned how to better organize my code with the SOLID principles as well as how to use mocks with unit testing</a>
+                <a class="skill">I learned how to better organize my code with the SOLID principles as well as how to
+                    use mocks with unit testing</a>
             </div>
             <div class="contrib">
                 <a class="name">Fernandes, Elroy</a><br>
@@ -229,23 +249,46 @@
             </div>
             <div class="contrib">
                 <a class="name">James, Evan</a><br>
-                <a class="skill">I learned how to use git, work with a group of programmers, how to plan, and use Android Studio</a>
+                <a class="skill">I learned how to use git, work with a group of programmers, how to plan, and use
+                    Android Studio</a>
             </div>
             <div class="contrib">
                 <a class="name">Krosney, Alex</a><br>
-                <a class="skill">I became more knowledgeable in using SQL, and learned how to do system and integration testing</a>
+                <a class="skill">I became more knowledgeable in using SQL, and learned how to do system and integration
+                    testing</a>
             </div>
         </div>
         <div id="postmortem" hidden="true">
             <h1>Postmortem</h1>
 
             <h4>What went right in the development process?</h4>
-            <p>Some of us had no experience with git and others very little, so as a group we chose trunk-based development to avoid "merge hell". And it has served us very well on this project. We did not continually need to merge branches, and with very few exceptions, anyone could have downloaded our project at any time and it wouuld have worked.</p>
+            <p>Some of us had no experience with git and others very little, so as a group we chose trunk-based
+                development to avoid "merge hell". And it has served us very well on this project. We did not
+                continually need to merge branches, and with very few exceptions, anyone could have downloaded our
+                project at any time and it wouuld have worked.</p>
             <h4>What went wrong in the development process?</h4>
-            <p>One aspect of our project that we could have improved is the organization of recipes, especially considering that our application aims to provide recipe-organizing utilities. Our project contains several features for organization, such as searching by title, descriptions, and tags, as well as a favourites section. One of our planned features was organizing recipes into folders. We did not complete this feature which would have been a great addition to an organization application. So, while we have some organization aspects, we could certainly improve the utility of our application in this regard. Folder organization tended to be marked medium or high priority for each iteration despite us completing several lower priority features. We could improve overall organization utilities of our application for any iteration by ensuring we focus on high or medium priority features instead of adding several low priority features. This focus benefits any other client-driven projects as high priority tasks should be worked on first as these are the features most important to the client. A client may not appreciate an application that contains all of the low priority features with very few of the features they desire most.</p>
-         
+            <p>One aspect of our project that we could have improved is the organization of recipes, especially
+                considering that our application aims to provide recipe-organizing utilities. Our project contains
+                several features for organization, such as searching by title, descriptions, and tags, as well as a
+                favourites section. One of our planned features was organizing recipes into folders. We did not complete
+                this feature which would have been a great addition to an organization application. So, while we have
+                some organization aspects, we could certainly improve the utility of our application in this regard.
+                Folder organization tended to be marked medium or high priority for each iteration despite us completing
+                several lower priority features. We could improve overall organization utilities of our application for
+                any iteration by ensuring we focus on high or medium priority features instead of adding several low
+                priority features. This focus benefits any other client-driven projects as high priority tasks should be
+                worked on first as these are the features most important to the client. A client may not appreciate an
+                application that contains all of the low priority features with very few of the features they desire
+                most.</p>
+
             <h4>What took the most time? The least? Any surprises?</h4>
-            <p>Of all our layers, the UI took the most time. We initially assumed we only needed 1 person for the UI, but it became quite obvious after iteration 1 that one person was not enough. We realized most of our features relied heavily on the UI and by the end of iteration 3, most team members had at some point or another been working on the UI. Also system or acceptance tests took a lot of time to setup. We surpisingly ran into significant issues with setting up our gradle file to work with Espresso and then also with our database. The least amount of work went into our DSO's - they were relatively simple and straightforward.</p>
+            <p>Of all our layers, the UI took the most time. We initially assumed we only needed 1 person for the UI,
+                but it became quite obvious after iteration 1 that one person was not enough. We realized most of our
+                features relied heavily on the UI and by the end of iteration 3, most team members had at some point or
+                another been working on the UI. Also system or acceptance tests took a lot of time to setup. We
+                surpisingly ran into significant issues with setting up our gradle file to work with Espresso and then
+                also with our database. The least amount of work went into our DSO's - they were relatively simple and
+                straightforward.</p>
         </div>
     </section>
 </body>
